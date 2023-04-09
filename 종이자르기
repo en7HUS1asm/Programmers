@@ -1,0 +1,19 @@
+def solution(M, N):
+    answer = 0
+    a,b = 0
+    if not M==1:
+        if not N==1:
+            a = (M-1) + M*(N-1)
+            b = (N-1) + N*(M-1)
+            if a >= b:
+                answer = a
+            else:
+                answer = b
+    if M == 1 and N ==1:
+        answer = 0
+    elif M==1:
+        answer = N-1
+    elif N==1:
+        answer = M-1
+        
+    return answer
