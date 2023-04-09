@@ -1,0 +1,27 @@
+# Sol 1
+
+def solution(num, total):
+    answer = []
+    start_num = 0
+
+    if num%2==1:                                    # 홀수일 경우
+        start_num = total//num - (num-1)//2
+        for i in range (num):
+            answer.append(start_num+i)
+
+    if num%2==0:                                    # 짝수일 경우
+        start_num = (total//(num//2)+1)/2-num/2
+        for i in range (num):
+            answer.append(start_num+i)
+
+    return answer
+    
+    
+# Sol 2
+    
+    def solution(num, total):
+    answer = []
+    diff = sum(range(num+1))
+    start_num = (total - diff)//num
+    answer = [i+1+start_num for i in range(num)]
+    return answer
