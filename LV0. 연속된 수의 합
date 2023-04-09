@@ -21,7 +21,7 @@ def solution(num, total):
     
     def solution(num, total):
     answer = []
-    diff = sum(range(num+1))
+    diff = sum(range(num))
     start_num = (total - diff)//num
-    answer = [i+1+start_num for i in range(num)]
+    answer = [i+start_num for i in range(num)]
     return answer
