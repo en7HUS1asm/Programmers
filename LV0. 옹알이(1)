@@ -1,0 +1,18 @@
+Sol 1
+
+from itertools import permutations			# 순열
+
+def solution(babbling):
+    able = ['aya', 'ye', 'woo', 'ma']
+    answer = 0
+    per_able = []
+    
+    for i in range(len(able)):
+        for j in permutations(able,i+1):
+            per_able.append("".join(j))		# able로 가능한 조합 생성
+    
+    for i in range(len(babbling)):
+        if babbling[i] in per_able:
+            answer = answer + 1
+            
+    return answer
