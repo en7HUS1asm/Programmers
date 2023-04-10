@@ -1,0 +1,19 @@
+Sol 1
+
+def solution(quiz):
+    answer = []
+    xyz = []
+
+    for i in range(len(quiz)):
+        xyz.append(quiz[i].split())
+        if xyz[i][1] == '+':
+            if int(xyz[i][0]) + int(xyz[i][2]) == int(xyz[i][4]):
+                answer.append('O')
+            else:
+                answer.append('X')
+        elif xyz[i][1] == '-':
+            if int(xyz[i][0]) - int(xyz[i][2]) == int(xyz[i][4]):
+                answer.append('O')
+            else:
+                answer.append('X')
+    return answer
