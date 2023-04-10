@@ -1,0 +1,10 @@
+Sol 1
+
+def solution(common):
+    answer = 0
+    lens = len(common)-1
+    if common[2]*common[0] == common[1]**2 and not common[0] == 0:
+        answer = common[lens]*common[2]/common[1]
+    else:
+        answer = common[lens]+common[1]-common[0]
+    return answer
