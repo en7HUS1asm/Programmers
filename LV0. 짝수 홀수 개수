@@ -1,0 +1,9 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120824
+
+#Sol 1
+def solution(num_list):
+    odd = 0
+    for i in num_list:
+        if i%2 ==1:
+           odd += 1
+    return len(num_list)-odd, odd
