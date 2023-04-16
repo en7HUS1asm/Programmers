@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120903/solution_groups?language=python3&type=my
+
+# Sol 1
+def solution(s1, s2):
+    answer = 0
+    for i in s1:
+        if i in s2:
+            answer +=1
+    return answer
+    
+# Sol 2
+def solution(s1, s2):
+    return len(set(s1)&set(s2));
