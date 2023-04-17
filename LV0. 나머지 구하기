@@ -1,0 +1,5 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120810
+
+# Sol 1
+
+solution = lambda x,y : x%y
