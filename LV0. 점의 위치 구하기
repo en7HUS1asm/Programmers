@@ -1,0 +1,17 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120841
+
+# Sol 1
+
+def solution(dot):
+    answer = 0
+    if abs(dot[0])==dot[0]: # x양수
+        if abs(dot[1])==dot[1]: #y양수
+            answer=1
+        else:
+            answer=4
+    else:   #x음수
+        if abs(dot[1])==dot[1]: #y양수
+            answer=2
+        else:
+            answer=3 
+    return answer
