@@ -1,0 +1,6 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120819
+
+# Sol 1
+
+def solution(x):
+    return x//5500, x%5500
