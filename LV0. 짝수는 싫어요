@@ -1,5 +1,4 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/120813/solution_groups?language=python3&type=my
-
+https://school.programmers.co.kr/learn/courses/30/lessons/120813
 # Sol 1
 def solution(n):
     return [x for x in range (n+1) if x%2==1]
