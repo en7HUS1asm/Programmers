@@ -1,0 +1,5 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181944
+
+# Sol 1
+n = int(input())
+print(n, "is even") if n%2==0 else print(n, "is odd")
