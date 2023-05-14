@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/76501
+
+# Sol 1
+
+def solution(absolutes, signs):
+    answer=0
+    for i in range(len(absolutes)):
+        if signs[i]==False:
+            answer -= absolutes[i]
+        if signs[i]==True:
+            answer += absolutes[i]
+            
+    return answer
