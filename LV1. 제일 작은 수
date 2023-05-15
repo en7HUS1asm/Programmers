@@ -1,0 +1,11 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12935
+
+# Sol 1
+
+def solution(arr):
+    for i in range (len(arr)):
+        if arr[i] == min(arr):
+            arr.remove(arr[i])
+    if len(arr)==0:
+        arr = [-1]
+    return arr
