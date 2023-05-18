@@ -1,0 +1,6 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181933?language=python3
+
+# Sol 1
+
+def solution(a, b, flag):
+    return a+b if flag == True else a-b
