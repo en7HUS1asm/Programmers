@@ -1,0 +1,6 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181939
+
+# Sol 1
+
+def solution(a, b):
+    return max(10**len(str(b))*a+b, 10**len(str(a))*b+a)
