@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181926
+
+#Sol 1
+
+def solution(n, control):
+    answer = n
+    return (control.count('d')-control.count('a'))*10 +control.count('w')-control.count('s') +n 
