@@ -1,0 +1,10 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12939
+
+#Sol1 
+def solution(s):
+    answer = []
+    answer.append(min(s.split( )))
+    answer.append(max(s.split( )))
+    if int(answer[0]) > int(answer[1]):
+        answer[0], answer[1] = answer[1], answer[0]
+    return " ".join(answer)
