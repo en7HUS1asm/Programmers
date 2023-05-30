@@ -1,0 +1,9 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120816
+
+# Sol 1
+
+def solution(slice, n):
+    answer = 0
+    while slice*answer < n:
+        answer += 1
+    return answer
