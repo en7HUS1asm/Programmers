@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181908#
+
+# Sol
+
+def solution(my_string, is_suffix):
+    a = len(is_suffix)
+    return 1 if is_suffix==my_string[-a:] else 0
