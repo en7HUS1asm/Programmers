@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120839
+
+# Sol
+
+def solution(rsp):
+    answer = []
+    for i in rsp:
+        if i == '2':
+            answer.append(0)
+        elif i == '0':
+            answer.append(5)
+        else:
+              answer.append(2)
+    answer = list(map(str, answer))
+    return "".join(answer)
