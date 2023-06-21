@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181931
+
+# Sol 1
+
+def solution(a, d, included):
+    answer = 0
+    return sum((a + i*d) for i in range (len(included)) if included[i]==True)
