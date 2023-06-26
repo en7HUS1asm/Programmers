@@ -1,0 +1,14 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181879
+
+# Sol 1
+
+def solution(num_list):
+    if len(num_list) >10:
+        result=0
+        for i in (num_list):
+            result += i
+    else:
+        result =1
+        for i in (num_list):
+            result *= i
+    return result
