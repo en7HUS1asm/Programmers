@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181899
+
+# Sol 1
+
+def solution(start, end):
+    answer = []
+    return [i for i in range(start,end-1,-1)]
