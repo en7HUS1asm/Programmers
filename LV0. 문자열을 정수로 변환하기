@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181848
+
+#Sol 1
+
+def solution(n_str):
+    answer = 0
+    return int(n_str)
