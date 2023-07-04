@@ -1,0 +1,6 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181891
+
+# Sol 1
+
+def solution(num_list, n):
+    return num_list[n:]+num_list[:n]
