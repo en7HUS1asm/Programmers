@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181847
+
+# Sol 1
+
+def solution(n_str):
+    while True:
+        i=0
+        if n_str[i]=='0':
+            n_str = n_str[i+1:]
+        else:
+            break;
+    return n_str
