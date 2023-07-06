@@ -1,0 +1,19 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12953
+
+# Sol 1
+
+def solution(arr):
+    arr.sort()
+    answer=1
+    gap=1
+    while True:
+        if answer%arr[0]==0:
+            gap=answer
+            arr.pop(0)
+            if len(arr)==0:
+                break;
+        else:
+            answer += gap
+                
+    
+    return answer
