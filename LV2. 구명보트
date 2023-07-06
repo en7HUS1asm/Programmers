@@ -1,0 +1,24 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/42885
+
+# Sol 1
+
+def solution(people, limit):
+    answer = 0
+    people.sort(reverse=True)
+    a=0
+    b=len(people)-1
+    while b-a>1:
+        if people[a] + people[b] >limit:
+            answer += 1
+        else:
+            b -= 1
+            answer += 1
+        a += 1
+        
+        
+    if people[a] + people[b]> limit:
+        answer+=2
+    else:
+        answer+=1
+
+    return answer
