@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181865?language=python3
+
+# Sol 1
+
+def solution(binomial):
+    answer=[]
+    answer = binomial.split (" ")
+    ans = 0
+    if answer[1] == '+':
+     ans = int(answer[0]) + int(answer[2])
+    if answer[1] == '-':
+     ans =  int(answer[0]) - int(answer[2])
+    if answer[1] == '*':
+     ans =  int(answer[0]) * int(answer[2])
+    return ans
