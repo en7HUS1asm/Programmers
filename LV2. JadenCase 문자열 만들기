@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12951
+
+# Sol 1
+
+def solution(s):
+    answer = ''
+    answer += s[0].upper()
+    for i in range (len(s)-1):
+        if s[i] == ' ':
+            answer += s[i+1].upper()
+        else:
+            answer += s[i+1].lower()
+    return answer
