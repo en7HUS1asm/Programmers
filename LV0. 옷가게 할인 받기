@@ -10,4 +10,6 @@ def solution(price):
         answer=0.9*price
     elif price >= 100000:
         answer=0.95*price
+    else:
+        answer=price
     return int(answer)
