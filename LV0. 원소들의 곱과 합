@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181929
+
+# Sol 1
+
+def solution(num_list):
+    gob=1
+    zegob=0
+    for i in num_list:
+        gob *= i
+        zegob += i
+    print(gob, zegob)
+    if gob < zegob**2:
+        return 1
+    else:
+        return 0
