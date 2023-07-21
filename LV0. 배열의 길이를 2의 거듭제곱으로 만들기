@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181857
+
+# Sol 1
+
+def solution(arr):
+    answer = []
+    a=0
+    answer = arr
+    for i in range(11):
+        if 2**i >= len(arr):
+            a=2**i
+            break;
+    while len(answer) != a:
+        answer.append(0)
+    return answer
