@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120890
+
+# Sol 1
+
+def solution(array, n):
+    a=0
+    while True:
+        if n-a in array:
+            return n-a
+            break;
+        elif n+a in array:
+            return n+a
+            break;
+        a += 1
+        
