@@ -1,0 +1,9 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181914
+
+# Sol 1
+
+def solution(number):
+    answer = 0
+    for i in range(len(number)):
+        answer += int(number[i])
+    return answer%9
