@@ -1,0 +1,10 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120851?language=python3
+
+# Sol 1
+
+def solution(my_string):
+    answer = 0
+    for i in range (len(my_string)):
+        if my_string[i].isdigit():
+            answer += int(my_string[i])
+    return answer
