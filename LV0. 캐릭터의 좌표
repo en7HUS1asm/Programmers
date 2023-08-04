@@ -1,0 +1,30 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120861
+
+# Sol 1
+
+def solution(keyinput, board):
+    answer = [0, 0]
+    i=0
+    while i < len(keyinput):
+        if keyinput[i] == "left":
+            answer= [answer[0]-1, answer[1]]
+        elif keyinput[i] == "right":
+            answer= [answer[0]+1, answer[1]]
+        elif keyinput[i] == "up":
+            answer= [answer[0], answer[1]+1]
+        elif keyinput[i] == "down":
+            answer= [answer[0], answer[1]-1]
+        
+        if answer[0] >= board[0]//2:
+            answer[0] = board[0]//2
+        if answer[0] <= -board[0]//2:
+            answer[0] = -(board[0]//2)
+        if answer[1] >= board[1]//2:
+            answer[1] = board[1]//2
+        if answer[1] <= -board[1]//2:
+            answer[1] = -(board[1]//2)
+        i +=1
+    return answer
+        
+        
+    return answer
