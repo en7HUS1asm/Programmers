@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181886
+
+# Sol 1
+
+def solution(names):
+    answer = []
+    i=0
+    while i < len(names):
+        answer.append(names[i])
+        print(i)
+        i += 5
+    return answer
