@@ -7,6 +7,5 @@ def solution(names):
     i=0
     while i < len(names):
         answer.append(names[i])
-        print(i)
         i += 5
     return answer
