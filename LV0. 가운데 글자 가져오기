@@ -1,0 +1,14 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12903
+
+# Sol 1
+
+def solution(s):
+    a = len(s)
+    if len(s)%2==0:
+        print('짝')
+        return(s[a//2-1:a//2+1])
+
+    else:
+        print('홀')
+        return(s[a//2])
+
