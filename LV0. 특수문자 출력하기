@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181948?language=python3
+
+# Sol 1
+
+print(r'!@#$%^&*(\'"<>?:;')
+
+# Sol 2
+
+print('''!@#$%^&*(\\'"<>?:;''')
+
+# Sol 3
+
+print("!@#$%^&*(\\'\"<>?:;")
