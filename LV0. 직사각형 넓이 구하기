@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120860
+
+# Sol 1
+
+def solution(dots):
+    answer = 0
+    a=[dots[0][0],dots[0][1]]
+    b=[dots[0][0],dots[0][1]]
+    for i in range(len(dots)):
+        if dots[i][0] <= a[0] and dots[i][1] <= a[1]:
+            a=[dots[i][0], dots[i][1]]
+        if dots[i][0] >=b[0] and dots[i][1] >= b[1]:
+            b=[dots[i][0], dots[i][1]]
+    answer = (b[0]-a[0]) * (b[1]-a[1])
+    return answer
