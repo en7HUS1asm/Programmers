@@ -1,0 +1,7 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181941
+
+# Sol 1
+
+def solution(arr):
+    answer = ''.join(s for s in arr)
+    return answer
