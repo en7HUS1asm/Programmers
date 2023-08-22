@@ -1,0 +1,14 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181880
+
+# Sol 1
+
+def solution(num_list):
+    answer = 0
+    for i in range(len(num_list)):
+        cnt = 0
+        while True:
+            if 2**cnt <= num_list[i] and num_list[i] < 2**(cnt+1):  
+                answer += cnt
+                break;
+            cnt += 1
+    return answer
