@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181893
+
+# Sol 1
+
+def solution(arr, query):
+    answer = []
+    answer = arr
+    for i in range(len(query)):
+        if i%2==0:
+            answer = answer[:query[i]+1]
+            #print(answer)
+        else:
+            answer = answer[query[i]:]
+            #print(answer)
+    return answer
