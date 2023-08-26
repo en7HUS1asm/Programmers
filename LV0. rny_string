@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181863?language=python3
+
+ # Sol 1
+
+def solution(rny_string):
+    answer = ''
+    for i in range(len(rny_string)):
+        if rny_string[i] == "m":
+            answer += "rn"
+        else:
+            answer += rny_string[i]
+    return answer
