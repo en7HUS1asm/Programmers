@@ -1,0 +1,11 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181917
+
+# Sol 1
+
+def solution(x1, x2, x3, x4):
+    answer = True
+    if x1== False and x2 == False:
+        answer=False
+    elif x3== False and x4 == False:
+        answer=False
+    return answer
