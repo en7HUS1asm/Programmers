@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181883
+
+# Sol 1
+
+def solution(arr, queries):
+    answer = []
+    answer = arr
+    for i in range(len(queries)):
+        for j in range(len(arr)):
+            if queries[i][0] <= j and queries[i][1] >= j:
+                answer[j] +=1
+    return answer
