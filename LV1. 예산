@@ -1,0 +1,15 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12982
+
+# Sol 1
+
+def solution(d, budget):
+    cost = 0
+    answer = 0
+    d.sort()
+    for i in d:
+        if cost + i <= budget:
+            cost += i
+            answer += 1
+        else:
+            break;
+    return answer
