@@ -1,0 +1,19 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181855
+
+# Sol 1
+
+def solution(strArr):
+    answer = 0
+    cnt = 1
+    lens = []
+    for i in strArr:
+        lens.append(len(i))
+    lens.sort()
+    for i in range(1,len(lens)):
+        if lens[i-1] == lens[i]:
+            cnt +=1
+            if cnt > answer:
+                answer = cnt
+        else:
+            cnt = 1
+    return answer
