@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181834
+
+# Sol 1
+
+def solution(myString):
+    answer = ''
+    for i in myString:
+        if ord(i) < ord("l"):
+            answer += "l"
+        else:
+            answer += i
+    return answer
