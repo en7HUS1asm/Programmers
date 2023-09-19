@@ -1,0 +1,7 @@
+def solution(my_string):
+    answer = ''
+    answer = my_string.upper()
+    for i in range(len(my_string)):
+        if my_string[i] == answer[i]:
+            answer = answer[:i] + my_string[i].lower() + answer[i+1:]
+    return answer
