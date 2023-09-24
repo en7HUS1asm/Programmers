@@ -1,0 +1,9 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120908
+
+# Sol 1
+
+def solution(str1, str2):
+    answer = 2
+    if str2 in str1:
+        answer = 1
+    return answer
