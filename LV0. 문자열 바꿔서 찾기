@@ -1,0 +1,13 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181864
+
+# Sol 1
+
+def solution(myString, pat):
+    answer = 0
+    ga = ""
+    ga = myString.replace('A', 'C').replace('B', 'A').replace('C', 'B')
+    if pat in ga:
+        answer = 1
+    else:
+        answer = 0
+    return answer
