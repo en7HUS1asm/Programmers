@@ -1,0 +1,12 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181949?language=python3
+
+# Sol 1
+
+str = input()
+answer = ""
+for i in str:
+    if i.upper() == i:
+        answer += i.lower()
+    else:
+        answer += i.upper()
+print(answer)
