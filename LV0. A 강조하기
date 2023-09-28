@@ -1,0 +1,8 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/181874
+
+# Sol 1
+
+def solution(myString):
+    answer = ""
+    answer = myString.lower().replace("a", "A")
+    return answer
